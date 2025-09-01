@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prof. Your Name — Research Group</title>
+  <meta name="description" content="Academic homepage for Prof. Your Name: research, publications, teaching, CV, and contact." />
+  
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Prof. Your Name — Research Group" />
+  <meta property="og:description" content="Academic homepage for Prof. Your Name: research, publications, teaching, CV, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.edu" />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (replace) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Minimal, readable CSS -->
+  <style>
+    :root {
+      --bg: #0b1020;        /* deep blue */
+      --card: #11162b;      /* slightly lighter */
+      --text: #eaf0ff;      /* soft ivory */
+      --muted: #a9b3d9;     /* muted blue-gray */
+      --accent: #7dd3fc;    /* sky */
+      --link: #93c5fd;      /* light blue */
+      --ring: rgba(125,211,252,0.6);
+      --maxw: 1000px;
+    }
+    * { box-sizing: border-box }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji" }
+    a { color: var(--link); text-decoration: none }
+    a:hover { text-decoration: underline }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 24px }
+    header { display: flex; gap: 24px; align-items: center; padding: 32px 0 8px; }
+    header img { width: 112px; height: 112px; border-radius: 16px; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,.35) }
+    .title { flex: 1 }
+    h1 { font-size: 1.9rem; margin: 0 0 4px }
+    .affil { color: var(--muted); margin: 0 }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px }
+    nav a { display: inline-block; padding: 8px 14px; border: 1px solid #1f2757; background: #0e1533; border-radius: 999px }
+    nav a:focus { outline: 3px solid var(--ring) }
+
+    .grid { display: grid; gap: 18px }
+    @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr 0.8fr } }
+    section { background: var(--card); border: 1px solid #1e2a55; border-radius: 18px; padding: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.25) }
+    section h2 { margin-top: 0; font-size: 1.3rem }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #0f1a3f; border: 1px solid #253980; color: var(--muted); font-size: 0.9rem }
+    .list { padding-left: 18px }
+    .list li { margin: 8px 0 }
+    .pub { margin: 10px 0; }
+    .pub .venue { color: var(--muted) }
+    .pub .links a { margin-right: 10px }
+
+    footer { color: var(--muted); text-align: center; padding: 24px 0; font-size: 0.95rem }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: #0e1633; border: 1px solid #27346b; padding: 2px 6px; border-radius: 6px }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0 }
+  </style>
+
+  <!-- Schema.org (fill placeholders) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prof. Your Name",
+    "jobTitle": "Associate Professor",
+    "affiliation": "Your Department, Your University",
+    "url": "https://yourdomain",
+    "image": "https://yourdomain/assets/headshot.jpg",
+    "sameAs": [
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://scholar.google.com/citations?user=YOURID",
+      "https://www.semanticscholar.org/author/YOURID",
+      "https://www.researchgate.net/profile/Your-Name",
+      "https://x.com/yourhandle"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/headshot.jpg" alt="Headshot of Prof. Your Name" />
+      <div class="title">
+        <h1>Prof. Your Name</h1>
+        <p class="affil">Your Department · Your University · <a href="#contact">Contact</a></p>
+        <nav aria-label="Primary">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#group">Group</a>
+          <a href="#talks">Talks</a>
+          <a href="#cv">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          I am an <strong>Associate Professor</strong> in the <em>Your Department</em> at <em>Your University</em>.
+          My group studies <span class="pill">coastal aquifers</span> <span class="pill">solute cycling</span> <span class="pill">submarine groundwater discharge</span>.
+        </p>
+        <p>
+          Our work blends <strong>field observations</strong>, <strong>geochemical analyses</strong>, and <strong>numerical modeling</strong> (e.g., FEFLOW) to understand flow and transport in coastal systems.
+        </p>
+      </section>
+
+      <section id="highlights" aria-labelledby="highlights-title">
+        <h2 id="highlights-title">Highlights</h2>
+        <ul class="list">
+          <li>📄 New preprint: <a href="#">Spatial & depth-dependent variability of stable calcium isotopes (δ44/40Ca) in the Bay of Bengal</a> (2025).</li>
+          <li>🛰️ Dataset release: <a href="#">Coastal groundwater chemistry time series (2019–2025)</a>.</li>
+          <li>🎓 Recruiting a PhD student for 2026 start — <a href="#contact">get in touch</a>.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p>We investigate hydrologic and geochemical processes in coastal aquifers. Current themes:</p>
+      <ul class="list">
+        <li><strong>Solute fluxes</strong> linked to <em>submarine groundwater discharge</em> (SGD).</li>
+        <li><strong>Reactive transport</strong> and <em>redox dynamics</em> along freshwater–seawater interfaces.</li>
+        <li><strong>Stable isotope tracers</strong> (e.g., Ca, Sr, B) to reconstruct seawater–groundwater interactions.</li>
+        <li><strong>Numerical modeling</strong> of density-dependent flow and mass transport (FEFLOW).</li>
+      </ul>
+    </section>
+
+    <section id="publications" aria-labelledby="pubs-title">
+      <h2 id="pubs-title">Selected Publications</h2>
+      <!-- Duplicate .pub blocks as needed; keep newest first -->
+      <article class="pub">
+        <div><strong>Title of Paper</strong> — <span class="venue">Journal Name, 2025</span></div>
+        <div class="authors">Your Name*, Coauthor A, Coauthor B</div>
+        <div class="links">
+          <a href="#">PDF</a>
+          <a href="#">DOI</a>
+          <a href="#">Code</a>
+          <a href="#">Data</a>
+        </div>
+      </article>
+      <article class="pub">
+        <div><strong>Another Paper</strong> — <span class="venue">Journal Name, 2024</span></div>
+        <div class="authors">Your Name*, Coauthor C</div>
+        <div class="links">
+          <a href="#">PDF</a>
+          <a href="#">DOI</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="teaching" aria-labelledby="teach-title">
+      <h2 id="teach-title">Teaching</h2>
+      <ul class="list">
+        <li>GEOL 401: Hydrogeology (Fall)</li>
+        <li>GEOL 612: Reactive Transport Modeling (Spring)</li>
+      </ul>
+    </section>
+
+    <section id="group" aria-labelledby="group-title">
+      <h2 id="group-title">Group</h2>
+      <ul class="list">
+        <li><strong>Dr. Student One</strong> — PhD (SGD tracers)</li>
+        <li><strong>Ms. Student Two</strong> — MSc (FEFLOW modeling)</li>
+        <li><strong>Mr. Alum</strong> — Now at Research Institute</li>
+      </ul>
+    </section>
+
+    <section id="talks" aria-labelledby="talks-title">
+      <h2 id="talks-title">Talks & Service</h2>
+      <ul class="list">
+        <li>Invited: "Isotopic constraints on SGD" — Ocean Sciences Meeting 2025</li>
+        <li>Reviewer for: Nature Geoscience, WRR</li>
+      </ul>
+    </section>
+
+    <section id="cv" aria-labelledby="cv-title">
+      <h2 id="cv-title">CV</h2>
+      <p>Download the latest <a href="assets/CV_YourName.pdf">CV (PDF)</a>.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <address>
+        Your Department, Your University<br/>
+        City, Country · Postal Code<br/>
+        <a href="mailto:you@university.edu">you@university.edu</a>
+      </address>
+      <p>
+        Profiles: <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a> · 
+        <a href="https://scholar.google.com">Google Scholar</a> · 
+        <a href="https://www.semanticscholar.org/">Semantic Scholar</a> · 
+        <a href="https://www.researchgate.net/">ResearchGate</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name · Built with a tiny static site (no JS frameworks). Replace placeholders and publish on GitHub Pages.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional: Google Analytics 4 (replace G-XXXX) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXX');
+  </script>
+  -->
+</body>
+</html>
