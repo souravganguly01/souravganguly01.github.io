@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Sourav Ganguly — Research</title>
-  <meta name="description" content="Academic homepage for Prof. Your Name: research, publications, teaching, CV, and contact." />
+  <title>Sourav Ganguly — Research</title>
+  <meta name="description" content="Academic homepage for Sourav Ganguly: research, publications, teaching, CV, and contact." />
 
-  <!-- Minimal, readable CSS -->
   <style>
     :root {
-      --bg: #f9fafb;        /* light gray */
-      --card: #ffffff;      /* white */
-      --text: #1e293b;      /* dark slate */
-      --muted: #475569;     /* muted gray */
-      --accent: #2563eb;    /* blue */
-      --link: #1d4ed8;      /* darker blue */
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #475569;
+      --accent: #2563eb;
+      --link: #1d4ed8;
       --ring: rgba(37,99,235,0.3);
       --maxw: 1000px;
     }
     * { box-sizing: border-box }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui }
     a { color: var(--link); text-decoration: none }
     a:hover { text-decoration: underline }
     .container { max-width: var(--maxw); margin: 0 auto; padding: 24px }
@@ -31,7 +30,6 @@
     nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px }
     nav a { display: inline-block; padding: 8px 14px; border: 1px solid #e2e8f0; background: #f1f5f9; border-radius: 999px }
     nav a:focus { outline: 3px solid var(--ring) }
-
     .grid { display: grid; gap: 18px }
     @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr 0.8fr } }
     section { background: var(--card); border: 1px solid #e2e8f0; border-radius: 18px; padding: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.05) }
@@ -42,23 +40,22 @@
     .pub { margin: 10px 0; }
     .pub .venue { color: var(--muted) }
     .pub .links a { margin-right: 10px }
-
     footer { color: var(--muted); text-align: center; padding: 24px 0; font-size: 0.95rem }
-    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; background: #f1f5f9; border: 1px solid #cbd5e1; padding: 2px 6px; border-radius: 6px }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0 }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="assets/headshot.jpg" alt="Headshot of Prof. Your Name" />
+      <img src="assets/headshot.jpg" alt="Headshot of Sourav Ganguly" />
       <div class="title">
         <h1>Sourav Ganguly</h1>
-        <p class="affil">Your Department · Your University · <a href="#contact">Contact</a></p>
+        <p class="affil">Department of Earth and Planetary Sciences · Weizmann Institute of Science · <a href="#contact">Contact</a></p>
         <nav aria-label="Primary">
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#teaching">Teaching</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
           <a href="#group">Group</a>
           <a href="#talks">Talks</a>
           <a href="#cv">CV</a>
@@ -71,10 +68,10 @@
         <h2>About</h2>
         <p>
           I am a <strong>Postdoctoral Research Fellow</strong> in the <em>Department of Earth and Planetary Sciences</em> at <em>Weizmann Institute of Science, Israel</em>.
-          My research is broadly focused on low temperature geochemical processes that shapes the Earth surface, its hydrosphere and near-subsurface.
+          My research is broadly focused on low-temperature geochemical processes that shape the Earth’s surface, hydrosphere, and near-subsurface.
         </p>
         <p>
-          My work blends <strong>real-world observations</strong>, <strong>geochemical and isotopic analyses of water, sediment and rock samples,</strong>, and <strong>geochemial modeling</strong>
+          My work utilizes <strong>real-world observations</strong>, <strong>geochemical and isotopic analyses of water, sediment, and rock samples</strong>, and <strong>geochemical modeling</strong>.
         </p>
       </section>
 
@@ -98,11 +95,30 @@
       </ul>
     </section>
 
-    <section id="publications">
+   <section id="experience">
+      <h2>Working Experience</h2>
+      <ul class="list">
+        <li><strong>Postdoctoral Research Fellow</strong>, Weizmann Institute of Science, Israel</li>
+        <li><strong>Consultant Geochemist</strong>, Alt Carbon, India</li>
+        <li><strong>Research Associate</strong>, Indian Institute of Science</li>
+        <li><strong>Research Fellow</strong>, Indian Institute of Science</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="list">
+        <li><strong>Ph.D. in Earth Sciences</strong>, Indian Institute of Science, Bangalore </li>
+        <li><strong>M.Sc. in Applied Geology</strong>, Jadavpur University, Kolkata</li>
+        <li><strong>B.Sc. in Geological Sciences</strong>, Jadavpur University, Kolkata </li>
+      </ul>
+    </section>
+
+     <section id="publications">
       <h2>Selected Publications</h2>
       <article class="pub">
         <div><strong>Title of Paper</strong> — <span class="venue">Journal Name, 2025</span></div>
-        <div class="authors">Your Name*, Coauthor A, Coauthor B</div>
+        <div class="authors">Sourav Ganguly*, Coauthor A, Coauthor B</div>
         <div class="links">
           <a href="#">PDF</a>
           <a href="#">DOI</a>
@@ -110,39 +126,16 @@
       </article>
     </section>
 
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul class="list">
-        <li>GEOL 401: Hydrogeology (Fall)</li>
-        <li>GEOL 612: Reactive Transport Modeling (Spring)</li>
-      </ul>
-    </section>
-
-    <section id="group">
-      <h2>Group</h2>
-      <ul class="list">
-        <li><strong>Dr. Student One</strong> — PhD</li>
-        <li><strong>Ms. Student Two</strong> — MSc</li>
-      </ul>
-    </section>
-
-    <section id="talks">
-      <h2>Talks & Service</h2>
-      <ul class="list">
-        <li>Invited: "Isotopic constraints on SGD" — Ocean Sciences Meeting 2025</li>
-      </ul>
-    </section>
-
     <section id="cv">
       <h2>CV</h2>
-      <p>Download the latest <a href="assets/CV_YourName.pdf">CV (PDF)</a>.</p>
+      <p>Download the latest <a href="assets/CV_SouravGanguly.pdf">CV (PDF)</a>.</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <address>
-        Your Department, Your University<br/>
-        City, Country<br/>
+        Department of Earth and Planetary Sciences, Weizmann Institute of Science<br/>
+        Rehovot, Israel<br/>
         <a href="mailto:you@university.edu">you@university.edu</a>
       </address>
       <p>
@@ -152,7 +145,7 @@
     </section>
 
     <footer>
-      © <span id="year"></span> Your Name · Built with GitHub Pages
+      © <span id="year"></span> Sourav Ganguly · Built with GitHub Pages
     </footer>
   </div>
 
@@ -161,7 +154,3 @@
   </script>
 </body>
 </html>
-
-
-
-
