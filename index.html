@@ -7,40 +7,53 @@
   <meta name="description" content="Academic homepage for Sourav Ganguly: research, publications, teaching, CV, and contact." />
 
   <style>
-    :root {
-      --bg: #f9fafb;
-      --card: #ffffff;
-      --text: #1e293b;
-      --muted: #475569;
-      --accent: #2563eb;
-      --link: #1d4ed8;
-      --ring: rgba(37,99,235,0.3);
-      --maxw: 1000px;
+    :root{
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --text:#1e293b;
+      --muted:#475569;
+      --link:#1d4ed8;
+      --ring:rgba(37,99,235,.3);
+      --maxw: 900px;
+      --radius: 16px;
     }
-    * { box-sizing: border-box }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui }
-    a { color: var(--link); text-decoration: none }
-    a:hover { text-decoration: underline }
-    .container { max-width: var(--maxw); margin: 0 auto; padding: 24px }
-    header { display: flex; gap: 24px; align-items: center; padding: 32px 0 8px; }
-    header img { width: 112px; height: 112px; border-radius: 16px; object-fit: cover; box-shadow: 0 6px 16px rgba(0,0,0,.15) }
-    .title { flex: 1 }
-    h1 { font-size: 1.9rem; margin: 0 0 4px }
-    .affil { color: var(--muted); margin: 0 }
-    nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px }
-    nav a { display: inline-block; padding: 8px 14px; border: 1px solid #e2e8f0; background: #f1f5f9; border-radius: 999px }
-    nav a:focus { outline: 3px solid var(--ring) }
-    .grid { display: grid; gap: 18px }
-    @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr 0.8fr } }
-    section { background: var(--card); border: 1px solid #e2e8f0; border-radius: 18px; padding: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.05) }
-    section h2 { margin-top: 0; font-size: 1.3rem }
-    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #e0f2fe; border: 1px solid #bae6fd; color: #0369a1; font-size: 0.9rem }
-    .list { padding-left: 18px }
-    .list li { margin: 8px 0 }
-    .pub { margin: 10px 0; }
-    .pub .venue { color: var(--muted) }
-    .pub .links a { margin-right: 10px }
-    footer { color: var(--muted); text-align: center; padding: 24px 0; font-size: 0.95rem }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0; padding:0; background:var(--bg); color:var(--text);
+      font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
+      scroll-behavior:smooth;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw); margin:0 auto; padding:28px 20px 40px}
+
+    header{display:flex; gap:20px; align-items:center; padding:8px 0 8px}
+    header img{width:108px; height:108px; border-radius:14px; object-fit:cover; box-shadow:0 6px 16px rgba(0,0,0,.12)}
+    .title{flex:1}
+    h1{font-size:2rem; margin:0 0 6px}
+    .affil{color:var(--muted); margin:0}
+    nav{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 4px}
+    nav a{display:inline-block; padding:8px 12px; border:1px solid #e2e8f0; background:#f1f5f9; border-radius:999px}
+    nav a:focus{outline:3px solid var(--ring)}
+
+    section{
+      background:var(--card); border:1px solid #e2e8f0; border-radius:var(--radius);
+      padding:20px; box-shadow:0 4px 16px rgba(0,0,0,.05); margin-top:18px;
+    }
+    section h2{margin:0 0 8px; font-size:1.35rem}
+    .list{padding-left:18px; margin: 8px 0 0}
+    .list li{margin:8px 0}
+    .pill{display:inline-block; padding:4px 10px; border-radius:999px; background:#e0f2fe; border:1px solid #bae6fd; color:#0369a1; font-size:.9rem}
+    .pub{margin:10px 0}
+    .pub .venue{color:var(--muted)}
+    .pub .links a{margin-right:10px}
+
+    footer{color:var(--muted); text-align:center; padding:22px 0; font-size:.95rem}
+
+    /* Optional: subtle separators on wide screens */
+    @media (min-width: 980px){
+      section{margin-top:22px}
+    }
   </style>
 </head>
 <body>
@@ -49,49 +62,56 @@
       <img src="assets/headshot.jpg" alt="Headshot of Sourav Ganguly" />
       <div class="title">
         <h1>Sourav Ganguly</h1>
-        <p class="affil">Department of Earth and Planetary Sciences · Weizmann Institute of Science, Israel · <a href="#contact">Contact</a></p>
+        <p class="affil">
+          Department of Earth and Planetary Sciences · Weizmann Institute of Science, Israel ·
+          <a href="#contact">Contact</a>
+        </p>
         <nav aria-label="Primary">
+          <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#publications">Publications</a>
           <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <div class="grid">
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I am a <strong>Postdoctoral Research Fellow</strong> in the <em>Department of Earth and Planetary Sciences</em> at <em>Weizmann Institute of Science, Israel</em>.
-          My research centers on fluid–rock interactions across diverse spatial and temporal scales, and how these processes shape Earth systems. My recent works have focused on developing novel metal isotope tools, constraining low-temperature water-rock interactions, weathering of silicates and a variety of aqueous geochemical processes in rivers and groundwater aquifers. 
-        </p>
-        <p>
-          I integrate real-world field observations with geochemical and isotopic analyses of water, sediment, and rock samples, alongside geochemical modeling, to advance our understanding of these fundamental Earth processes.
-        </p>
-      </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a <strong>Postdoctoral Research Fellow</strong> in the <em>Department of Earth and Planetary Sciences</em> at
+        <em>Weizmann Institute of Science, Israel</em>.
+        My research centers on fluid–rock interactions across diverse spatial and temporal scales, and how these processes shape Earth systems.
+        My recent works have focused on developing novel metal isotope tools, constraining low-temperature water-rock interactions, weathering of silicates and a variety of aqueous geochemical processes in rivers and groundwater aquifers.
+      </p>
+      <p>
+        I integrate real-world field observations with geochemical and isotopic analyses of water, sediment, and rock samples, alongside geochemical modeling, to advance our understanding of these fundamental Earth processes.
+      </p>
+    </section>
 
-      <!-- <section id="highlights">
-        <h2>Highlights</h2>
-        <ul class="list">
-          <li>📄 New preprint: <a href="#">Stable calcium isotopes in the Bay of Bengal</a> (2025).</li>
-          </ul>
-      </section>
-    </div> -->
+    <!-- If you want Highlights later, just uncomment this block
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <ul class="list">
+        <li>📄 New preprint: <a href="#">Stable calcium isotopes in the Bay of Bengal</a> (2025).</li>
+      </ul>
+    </section>
+    -->
 
     <section id="research">
       <h2>Research</h2>
       <ul class="list">
-        <li>Solute transport and fluxes through hydrosphere, water-rock interactions.</li>
+        <li>Solute transport and fluxes through hydrosphere; water–rock interactions.</li>
         <li>Reactive transport of solutes.</li>
         <li>Metal stable isotope fractionation in geochemical processes.</li>
         <li>Geochemical modeling and simulations.</li>
-        <li>Chemical weathering and enhanced rock weathering, Carbon removal techniques.</li>
+        <li>Chemical weathering and enhanced rock weathering; carbon removal techniques.</li>
       </ul>
     </section>
 
-   <section id="experience">
+    <section id="experience">
       <h2>Working Experience</h2>
       <ul class="list">
         <li><strong>Postdoctoral Research Fellow</strong>, Weizmann Institute of Science, Israel</li>
@@ -104,10 +124,27 @@
     <section id="education">
       <h2>Education</h2>
       <ul class="list">
-        <li><strong>Ph.D. in Earth Sciences</strong>, Indian Institute of Science, Bangalore </li>
+        <li><strong>Ph.D. in Earth Sciences</strong>, Indian Institute of Science, Bangalore</li>
         <li><strong>M.Sc. in Applied Geology</strong>, Jadavpur University, Kolkata</li>
-        <li><strong>B.Sc. in Geological Sciences</strong>, Jadavpur University, Kolkata </li>
+        <li><strong>B.Sc. in Geological Sciences</strong>, Jadavpur University, Kolkata</li>
       </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <article class="pub">
+        <div><strong>Title of Paper</strong> — <span class="venue">Journal Name, 2025</span></div>
+        <div class="authors">Sourav Ganguly*, Coauthor A, Coauthor B</div>
+        <div class="links">
+          <a href="#">PDF</a>
+          <a href="#">DOI</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Download the latest <a href="assets/CV_SouravGanguly.pdf">CV (PDF)</a>.</p>
     </section>
 
     <section id="contact">
@@ -132,10 +169,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
