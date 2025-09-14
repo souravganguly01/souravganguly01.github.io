@@ -1,0 +1,43 @@
+:root{
+  --bg:#f9fafb; --card:#ffffff; --text:#1e293b; --muted:#475569;
+  --link:#1d4ed8; --ring:rgba(37,99,235,.3);
+  --maxw: 900px; --radius: 16px;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0; padding:0; background:var(--bg); color:var(--text);
+  font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
+}
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:var(--maxw); margin:0 auto; padding:28px 20px 40px}
+
+header{display:flex; gap:20px; align-items:center; padding:8px 0 8px}
+header img{width:108px; height:108px; border-radius:14px; object-fit:cover; box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.title{flex:1}
+h1{font-size:2rem; margin:0 0 6px}
+.affil{color:var(--muted); margin:0}
+
+/* Nav */
+nav{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 4px}
+nav a{
+  display:inline-block; padding:8px 12px; border:1px solid #e2e8f0;
+  background:#f1f5f9; border-radius:999px;
+}
+nav a:focus{outline:3px solid var(--ring)}
+nav a.active{background:#e2e8f0; border-color:#cbd5e1; font-weight:600}
+
+/* Content cards */
+section{
+  background:var(--card); border:1px solid #e2e8f0; border-radius:var(--radius);
+  padding:20px; box-shadow:0 4px 16px rgba(0,0,0,.05); margin-top:18px;
+}
+section h2{margin:0 0 8px; font-size:1.35rem}
+.list{padding-left:18px; margin: 8px 0 0}
+.list li{margin:8px 0}
+
+footer{color:var(--muted); text-align:center; padding:22px 0; font-size:.95rem}
+
+/* Utility */
+.rounded{border-radius:12px}
+.mb-12{margin-bottom:12px}
